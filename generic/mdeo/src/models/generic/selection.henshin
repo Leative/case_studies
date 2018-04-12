@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_MEauAD2VEeix45-CN20ShQ">
+  <imports href="http://www.eclipse.org/emf/2011/Henshin/Trace#/"/>
+  <imports href="genericCrossover.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_buyqQD2XEeix45-CN20ShQ" name="selectContainer">
+    <lhs xmi:id="_bu1tkD2XEeix45-CN20ShQ" name="Lhs">
+      <nodes xmi:id="_kMINgD2YEeix45-CN20ShQ" name="root" outgoing="_lqMG8D2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Root"/>
+      </nodes>
+      <nodes xmi:id="_klYbAD2YEeix45-CN20ShQ" name="con" incoming="_lqMG8D2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Container"/>
+      </nodes>
+      <edges xmi:id="_lqMG8D2YEeix45-CN20ShQ" source="_kMINgD2YEeix45-CN20ShQ" target="_klYbAD2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Root/containers"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_bu1tkT2XEeix45-CN20ShQ" name="Rhs">
+      <nodes xmi:id="_kMINgT2YEeix45-CN20ShQ" name="root" outgoing="_lqMG8T2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Root"/>
+      </nodes>
+      <nodes xmi:id="_klYbAT2YEeix45-CN20ShQ" name="con" incoming="_lqMG8T2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Container"/>
+      </nodes>
+      <edges xmi:id="_lqMG8T2YEeix45-CN20ShQ" source="_kMINgT2YEeix45-CN20ShQ" target="_klYbAT2YEeix45-CN20ShQ">
+        <type href="genericCrossover.ecore#//Root/containers"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_kMINgj2YEeix45-CN20ShQ" origin="_kMINgD2YEeix45-CN20ShQ" image="_kMINgT2YEeix45-CN20ShQ"/>
+    <mappings xmi:id="_klYbAj2YEeix45-CN20ShQ" origin="_klYbAD2YEeix45-CN20ShQ" image="_klYbAT2YEeix45-CN20ShQ"/>
+    <multiRules xmi:id="_wzrj4D2YEeix45-CN20ShQ">
+      <lhs xmi:id="_wzsyAD2YEeix45-CN20ShQ" name="Lhs">
+        <nodes xmi:id="_wzsyCj2YEeix45-CN20ShQ" name="root" outgoing="_wzsyDj2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Root"/>
+        </nodes>
+        <nodes xmi:id="_wzsyDD2YEeix45-CN20ShQ" name="con" incoming="_wzsyDj2YEeix45-CN20ShQ" outgoing="_nicCAD2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Container"/>
+        </nodes>
+        <nodes xmi:id="_k0P9cD2YEeix45-CN20ShQ" name="obj" incoming="_nicCAD2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Object"/>
+        </nodes>
+        <edges xmi:id="_wzsyDj2YEeix45-CN20ShQ" source="_wzsyCj2YEeix45-CN20ShQ" target="_wzsyDD2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Root/containers"/>
+        </edges>
+        <edges xmi:id="_nicCAD2YEeix45-CN20ShQ" source="_wzsyDD2YEeix45-CN20ShQ" target="_k0P9cD2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Container/objects"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_wzsyAT2YEeix45-CN20ShQ" name="Rhs">
+        <nodes xmi:id="_wzsyAj2YEeix45-CN20ShQ" name="root" incoming="_vYf_UD2YEeix45-CN20ShQ" outgoing="_wzsyCT2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Root"/>
+        </nodes>
+        <nodes xmi:id="_puC98D2YEeix45-CN20ShQ" name="trc" outgoing="_uW9CwD2YEeix45-CN20ShQ _um48MD2YEeix45-CN20ShQ _vYf_UD2YEeix45-CN20ShQ">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace"/>
+        </nodes>
+        <nodes xmi:id="_wzsyBz2YEeix45-CN20ShQ" name="con" incoming="_wzsyCT2YEeix45-CN20ShQ _um48MD2YEeix45-CN20ShQ" outgoing="_nicCAT2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Container"/>
+        </nodes>
+        <nodes xmi:id="_k0P9cT2YEeix45-CN20ShQ" name="obj" incoming="_nicCAT2YEeix45-CN20ShQ _uW9CwD2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Object"/>
+        </nodes>
+        <edges xmi:id="_wzsyCT2YEeix45-CN20ShQ" source="_wzsyAj2YEeix45-CN20ShQ" target="_wzsyBz2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Root/containers"/>
+        </edges>
+        <edges xmi:id="_uW9CwD2YEeix45-CN20ShQ" source="_puC98D2YEeix45-CN20ShQ" target="_k0P9cT2YEeix45-CN20ShQ">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/target"/>
+        </edges>
+        <edges xmi:id="_um48MD2YEeix45-CN20ShQ" source="_puC98D2YEeix45-CN20ShQ" target="_wzsyBz2YEeix45-CN20ShQ">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+        </edges>
+        <edges xmi:id="_vYf_UD2YEeix45-CN20ShQ" source="_puC98D2YEeix45-CN20ShQ" target="_wzsyAj2YEeix45-CN20ShQ">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+        </edges>
+        <edges xmi:id="_nicCAT2YEeix45-CN20ShQ" source="_wzsyBz2YEeix45-CN20ShQ" target="_k0P9cT2YEeix45-CN20ShQ">
+          <type href="genericCrossover.ecore#//Container/objects"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_wzsyDz2YEeix45-CN20ShQ" origin="_wzsyCj2YEeix45-CN20ShQ" image="_wzsyAj2YEeix45-CN20ShQ"/>
+      <mappings xmi:id="_wztZEz2YEeix45-CN20ShQ" origin="_wzsyDD2YEeix45-CN20ShQ" image="_wzsyBz2YEeix45-CN20ShQ"/>
+      <mappings xmi:id="_k0P9cj2YEeix45-CN20ShQ" origin="_k0P9cD2YEeix45-CN20ShQ" image="_k0P9cT2YEeix45-CN20ShQ"/>
+      <multiMappings xmi:id="_wzsyAz2YEeix45-CN20ShQ" origin="_kMINgT2YEeix45-CN20ShQ" image="_wzsyAj2YEeix45-CN20ShQ"/>
+      <multiMappings xmi:id="_wzsyCD2YEeix45-CN20ShQ" origin="_klYbAT2YEeix45-CN20ShQ" image="_wzsyBz2YEeix45-CN20ShQ"/>
+      <multiMappings xmi:id="_wzsyCz2YEeix45-CN20ShQ" origin="_kMINgD2YEeix45-CN20ShQ" image="_wzsyCj2YEeix45-CN20ShQ"/>
+      <multiMappings xmi:id="_wzsyDT2YEeix45-CN20ShQ" origin="_klYbAD2YEeix45-CN20ShQ" image="_wzsyDD2YEeix45-CN20ShQ"/>
+    </multiRules>
+  </units>
+</henshin:Module>
